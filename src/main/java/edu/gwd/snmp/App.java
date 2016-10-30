@@ -25,7 +25,7 @@ public class App {
 			target.setCommunity(new OctetString("public"));// 设置共同体名,没发现设置RWCommnity的方
 															// 法,大概只能设一个.
 			target.setVersion(SnmpConstants.version2c);// 设置版本
-			target.setAddress(new UdpAddress("127.0.0.1/161"));// 设置IP地址和端口号,这里竟然用'/'来分
+			target.setAddress(new UdpAddress("127.0.0.1/11162"));// 设置IP地址和端口号,这里竟然用'/'来分
 																// 隔,当初确实没有料到,JDOC的说明等于没有.
 			target.setRetries(1); // 设置重试次数
 			target.setTimeout(5000); // 设置超时
